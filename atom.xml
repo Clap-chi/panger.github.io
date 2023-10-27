@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-10-27T06:15:18.436Z</updated>
+  <updated>2023-10-27T07:30:51.029Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,15 +21,15 @@
     <link href="http://example.com/blogs/2b7e9eb2.html"/>
     <id>http://example.com/blogs/2b7e9eb2.html</id>
     <published>2023-10-27T05:45:59.000Z</published>
-    <updated>2023-10-27T06:15:18.436Z</updated>
+    <updated>2023-10-27T07:30:51.029Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="/Effective-Cpp%E7%AC%94%E8%AE%B0/image-20231027141415651.png" alt="image-20231027141415651"></p><h2 id="命名习惯"><a href="#命名习惯" class="headerlink" title="命名习惯"></a>命名习惯</h2><p>构造函数：ctor</p><p>析构函数：dtor</p><p>left-hand side(左手端)：lhs</p><p>right-hand side(右手端)：rhs</p><p>对于成员函数，左侧实参由this指针表现出来，所以有时我单独使用参数名称rhs。</p><p>“指向一个T型对象”的指针命名为pt，意思是“pointer to T”。</p><p>对于references使用类似习惯：rw可能是个reference to Widget，ra则是个reference to Airplane。</p><h2 id="TR1和Boost"><a href="#TR1和Boost" class="headerlink" title="TR1和Boost"></a>TR1和Boost</h2><ul><li>Tr1（“Technical Report 1”）是一份规范，描述加入C++标准程序库的诸多新机能。这些技能以新的class templates和function templates形式体现，针对的题目有hash tables，reference-counting smart pointers，regular expressions，以及更多。所有TR1组件都被置于命名空间tr1内，后者嵌套与命名空间std内。</li><li>Boost是个组织，亦是一个网站（<a href="http://boost.org),提供可移植、同僚复审、源码开放的c++程序库.大多数tr1机能是以boost的工作为基础.在编译器厂商于其c++程序库中含入tr1之前,对那些搜寻tr1实现品的开发人员而言,boost网站可能是第一个逗留点.boost提供比tr1更多的东西,所以无论如何值得了解它./">http://boost.org），提供可移植、同僚复审、源码开放的C++程序库。大多数TR1机能是以Boost的工作为基础。在编译器厂商于其C++程序库中含入TR1之前，对那些搜寻TR1实现品的开发人员而言，Boost网站可能是第一个逗留点。Boost提供比TR1更多的东西，所以无论如何值得了解它。</a></li></ul><h1 id="1-让自己习惯C"><a href="#1-让自己习惯C" class="headerlink" title="1.让自己习惯C++"></a>1.让自己习惯C++</h1><h2 id="条款01：视C-为一个语言联邦"><a href="#条款01：视C-为一个语言联邦" class="headerlink" title="条款01：视C++为一个语言联邦"></a>条款01：视C++为一个语言联邦</h2><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name wzy                                                   #此英文名不需要跟GitHub账号保持一致</span><br><span class="line">git config --global user.email wzy2096@126.com                                                      #此邮箱不需要跟GitHub账号保持一致</span><br><span class="line">git config --global push.default matching</span><br><span class="line">git config --global core.quotepath false</span><br><span class="line">git config --global core.editor &quot;vim&quot;</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<p><img src="https://picyuan-1321960394.cos.ap-beijing.myqcloud.com/image-20231027152734799.png" alt="image-20231027152734799"></p><h1 id="前置"><a href="#前置" class="headerlink" title="前置"></a>前置</h1><h2 id="命名空间"><a href="#命名空间" class="headerlink" title="命名空间"></a>命名空间</h2><p>构造函数：ctor</p><p>析构函数：dtor</p><p>left-hand side(左手端)：lhs</p><p>right-hand side(右手端)：rhs</p><p>对于成员函数，左侧实参由this指针表现出来，所以有时我单独使用参数名称rhs。</p><p>“指向一个T型对象”的指针命名为pt，意思是“pointer to T”。</p><p>对于references使用类似习惯：rw可能是个reference to Widget，ra则是个reference to Airplane。</p><h2 id="TR1和Boost"><a href="#TR1和Boost" class="headerlink" title="TR1和Boost"></a>TR1和Boost</h2><ul><li>Tr1（“Technical Report 1”）是一份规范，描述加入C++标准程序库的诸多新机能。这些技能以新的class templates和function templates形式体现，针对的题目有hash tables，reference-counting smart pointers，regular expressions，以及更多。所有TR1组件都被置于命名空间tr1内，后者嵌套与命名空间std内。</li><li>Boost是个组织，亦是一个网站（<a href="http://boost.org),提供可移植、同僚复审、源码开放的c++程序库.大多数tr1机能是以boost的工作为基础.在编译器厂商于其c++程序库中含入tr1之前,对那些搜寻tr1实现品的开发人员而言,boost网站可能是第一个逗留点.boost提供比tr1更多的东西,所以无论如何值得了解它./">http://boost.org），提供可移植、同僚复审、源码开放的C++程序库。大多数TR1机能是以Boost的工作为基础。在编译器厂商于其C++程序库中含入TR1之前，对那些搜寻TR1实现品的开发人员而言，Boost网站可能是第一个逗留点。Boost提供比TR1更多的东西，所以无论如何值得了解它。</a></li></ul><h1 id="一、让自己习惯C"><a href="#一、让自己习惯C" class="headerlink" title="一、让自己习惯C++"></a>一、让自己习惯C++</h1><h2 id="1-1-视C-为一个语言联邦"><a href="#1-1-视C-为一个语言联邦" class="headerlink" title="1.1 视C++为一个语言联邦"></a>1.1 视C++为一个语言联邦</h2>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;/Effective-Cpp%E7%AC%94%E8%AE%B0/image-20231027141415651.png&quot; alt=&quot;image-20231027141415651&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;命名习惯&quot;&gt;&lt;a href=&quot;#命名习惯&quot; </summary>
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://picyuan-1321960394.cos.ap-beijing.myqcloud.com/image-20231027152734799.png&quot; alt=&quot;image-20231027152734799&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;</summary>
       
     
     
