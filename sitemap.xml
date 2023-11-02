@@ -4,7 +4,7 @@
   <url>
     <loc>http://example.com/blogs/2b7e9eb2.html</loc>
     
-    <lastmod>2023-11-01</lastmod>
+    <lastmod>2023-11-02</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -13,7 +13,7 @@
 
   <url>
     <loc>http://example.com/</loc>
-    <lastmod>2023-11-01</lastmod>
+    <lastmod>2023-11-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -21,7 +21,7 @@
   
   <url>
     <loc>http://example.com/tags/Effective-Cpp/</loc>
-    <lastmod>2023-11-01</lastmod>
+    <lastmod>2023-11-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
