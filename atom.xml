@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-11-18T11:06:27.405Z</updated>
+  <updated>2023-11-18T14:41:54.278Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Cpp设计模式</title>
+    <link href="http://example.com/blogs/1155b381.html"/>
+    <id>http://example.com/blogs/1155b381.html</id>
+    <published>2023-11-18T11:10:38.000Z</published>
+    <updated>2023-11-18T14:41:54.278Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="设计模式简介"><a href="#设计模式简介" class="headerlink" title="设计模式简介"></a>设计模式简介</h1><h2 id="深入理解面向对象"><a href="#深入理解面向对象" class="headerlink" title="深入理解面向对象"></a>深入理解面向对象</h2><p>向下：深入理解三大面向对象机制</p><ul><li>封装，隐藏内部实现</li><li>继承，复用现有代码</li><li>多态，改写对象行为</li></ul><p>向上：深刻把握面向对象机制所带来的抽象意义，理解如何使用这些机制来表达现实世界，掌握什么是“好的面向对象设计”。</p><p>解决复杂性：</p><ul><li><strong>分解</strong><ul><li>分而治之，将大问题分解为多个小问题，将复杂问题分解为多个简单问题。</li></ul></li><li><strong>抽象</strong><ul><li>由于不能掌握全部的复杂对象，选择忽视它的非本质细节，而去处理泛化和理想化了的对象模型。</li></ul></li></ul><h1 id="面向对象设计原则"><a href="#面向对象设计原则" class="headerlink" title="面向对象设计原则"></a>面向对象设计原则</h1><h2 id="重新认识面向对象"><a href="#重新认识面向对象" class="headerlink" title="重新认识面向对象"></a>重新认识面向对象</h2><ul><li><p>理解隔离变化</p><ul><li>从<code>宏观层面</code>来看，面向对象的构建方式更能适应软件的变化，能将变化所带来的影响减为最小</li></ul></li><li><p>各司其职</p><ul><li>从<code>微观层面</code>来看，面向对象的方式更强调各个类的“责任”</li><li>由于需求变化导致的新增类型不应该影响原来类型的实现——是所谓<code>各负其责</code></li></ul></li><li><p>对象是什么?</p><ul><li>从<code>语言实现</code>层面来看，对象封装了代码和数据</li><li>从<code>规格层面</code>讲，对象是一系列可被使用的公共接口</li><li>从<code>概念层面</code>讲，对象是某种拥有责任的抽象</li></ul></li></ul><h2 id="面向对象设计原则-1"><a href="#面向对象设计原则-1" class="headerlink" title="面向对象设计原则"></a>面向对象设计原则</h2><p><code>依赖倒置原则</code>（DIP）：</p><ul><li>高层模块（稳定）不应该依赖于低层模块（变化），二者都应该依赖于抽象（稳定）</li><li>抽象（稳定）不应该依赖于实现细节（变化），实现细节应该依赖于抽象（稳定）</li></ul><p><code>开放封闭原则</code>（OCP）：</p><ul><li>对扩展开放，对更改封闭</li><li>类模块应该是可扩展的，但是不可修改</li></ul><p><code>单一职责原则</code>（SRP）：</p><ul><li>一个类应该仅有一个引起它变化的原因</li><li>变化的方向隐含着类的责任</li></ul><p><code>Liskov替换原则</code>（LSP）：</p><ul><li>子类必须能够替换它们的基类（IS-A）</li><li>继承表达类型抽象</li></ul><p><code>接口隔离原则</code>（ISP）：</p><ul><li>不应该强迫客户程序依赖它们不用的方法</li><li>接口应该小而完备</li></ul><p><code>优先使用对象组合，而不是类继承</code>：</p><ul><li>类继承通常为”白箱复用“，对象组合通常为”黑箱复用“</li><li>继承在某种程度上破坏了封装性，子类父类耦合度高</li><li>而对象组合则只要求被组合的对象具有良好定义的接口，耦合度低</li></ul><p><code>封装变化点</code>：</p><ul><li>使用封装来创建对象之间的分界层，让设计者可以在分界层的一侧进行修改，而不会对令另一侧产生不良的影响，从而实现层次间的松耦合</li></ul><p><code>针对接口编程，而不是针对实现编程</code>：</p><ul><li>不将变量类型声明为某个特定的具体类，而是声明为某个接口</li><li>客户程序无需获知对象的具体类型，只需要知道对象所具有的接口</li><li>减少系统中各部分的依赖关系，从而实现“高聚内、松耦合”的类型设计方案</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;设计模式简介&quot;&gt;&lt;a href=&quot;#设计模式简介&quot; class=&quot;headerlink&quot; title=&quot;设计模式简介&quot;&gt;&lt;/a&gt;设计模式简介&lt;/h1&gt;&lt;h2 id=&quot;深入理解面向对象&quot;&gt;&lt;a href=&quot;#深入理解面向对象&quot; class=&quot;headerlink&quot; </summary>
+      
+    
+    
+    
+    
+    <category term="设计模式" scheme="http://example.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>STL</title>

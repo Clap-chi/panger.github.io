@@ -1,7 +1,9 @@
+http://example.com/blogs/1155b381.html
 http://example.com/blogs/3006dc10.html
 http://example.com/blogs/2b7e9eb2.html
 http://example.com/blogs/22e916fa.html
 http://example.com/
 http://example.com/tags/Effective-Cpp/
+http://example.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/
 http://example.com/tags/STL/
 http://example.com/tags/%E7%A7%BB%E5%8A%A8%E4%BA%92%E8%BF%9E%E7%BD%91%E6%8A%80%E6%9C%AF/
