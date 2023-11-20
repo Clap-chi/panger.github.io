@@ -61,14 +61,14 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/STL/</loc>
+    <loc>http://example.com/tags/Effective-Cpp/</loc>
     <lastmod>2023-11-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/Effective-Cpp/</loc>
+    <loc>http://example.com/tags/STL/</loc>
     <lastmod>2023-11-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
