@@ -1,3 +1,4 @@
+http://example.com/blogs/66f88466.html
 http://example.com/blogs/81b624c3.html
 http://example.com/blogs/713c1ac0.html
 http://example.com/blogs/2b7e9eb2.html
@@ -8,6 +9,6 @@ http://example.com/
 http://example.com/tags/C-2-0/
 http://example.com/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B/
 http://example.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/
-http://example.com/tags/Effective-Cpp/
 http://example.com/tags/STL/
+http://example.com/tags/Effective-Cpp/
 http://example.com/tags/%E7%A7%BB%E5%8A%A8%E4%BA%92%E8%BF%9E%E7%BD%91%E6%8A%80%E6%9C%AF/
