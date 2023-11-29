@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-11-28T14:44:14.987Z</updated>
+  <updated>2023-11-29T01:08:25.887Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux系统命令</title>
+    <link href="http://example.com/blogs/b9528813.html"/>
+    <id>http://example.com/blogs/b9528813.html</id>
+    <published>2023-11-29T00:27:51.000Z</published>
+    <updated>2023-11-29T01:08:25.887Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Linux的常用命令"><a href="#Linux的常用命令" class="headerlink" title="Linux的常用命令"></a>Linux的常用命令</h1><p><code>文件</code>是一组被命名的存储在某种介质（如硬盘、光盘、U盘）上的信息的集合。</p><p><code>文件名</code>是文件的标识，它是一个可以包含字母、数字、下划线和句点的字符串。Linux要求文件名的长度一般不能超过255个字符。</p><p>Linux系统以<code>目录</code>的方式来组织和管理系统中所有的文件。目录是一种特殊的文件，用来管理和组织系统内大量的文件。</p><p>在树型目录结构中，文件和目录都通过路径来表示。路径有两种表示方法：</p><ul><li><code>绝对路径</code>：从根目录开始</li><li><code>相对路径</code>：从当前目录开始</li></ul><p>Linux系统中可以使用通配符“*”、“?”来同时引用多个文件。</p><ul><li>通配符“*”代表文件名中任意的字符和字符串。</li><li>通配符“?”表示任意一个字符。</li></ul><h2 id="Linux常用命令"><a href="#Linux常用命令" class="headerlink" title="Linux常用命令"></a>Linux常用命令</h2><h3 id="查看当前目录命令pwd"><a href="#查看当前目录命令pwd" class="headerlink" title="查看当前目录命令pwd"></a>查看当前目录命令pwd</h3><p>格式：<code>pwd</code></p><p>例如：执行命令pwd，系统显示当前目录。</p><h3 id="改变当前目录cd"><a href="#改变当前目录cd" class="headerlink" title="改变当前目录cd"></a>改变当前目录cd</h3><p>格式：<code>cd &lt;目录名&gt;</code></p><p>例如：执行命令cd &#x2F;home&#x2F;admin，则切换到目录&#x2F;home&#x2F;admin下。</p><p>例如：执行命令cd~，则当前目录位于用户的主目录下。</p><p>例如：执行命令cd..，切换到当前目录的父目录。</p><h3 id="显示目录或文件信息命令ls"><a href="#显示目录或文件信息命令ls" class="headerlink" title="显示目录或文件信息命令ls"></a>显示目录或文件信息命令ls</h3><p>格式：<code>ls [选项] &lt;目录或文件名&gt;</code></p><p>主要选项如下：</p><p><code>-a</code>：显示所有的文件和目录。<br><code>-l</code>：以长格式显示文件信息。<br><code>-t</code>：将结果按修改时间进行排序，新的文件或目录排在前面。<br><code>-R</code>：若目录下有文件，则列出目录下的所有文件。</p><p>例如：执行命令<code>ls -al /</code>，显示根目录下所有文件的我爱你完整信息。</p><p>例如：执行命令<code>ls -at a*</code>，显示当前目录下所有以a开头的文件，新的文件排在前面。</p><h3 id="文件内容查看和连接命令cat"><a href="#文件内容查看和连接命令cat" class="headerlink" title="文件内容查看和连接命令cat"></a>文件内容查看和连接命令cat</h3>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;Linux的常用命令&quot;&gt;&lt;a href=&quot;#Linux的常用命令&quot; class=&quot;headerlink&quot; title=&quot;Linux的常用命令&quot;&gt;&lt;/a&gt;Linux的常用命令&lt;/h1&gt;&lt;p&gt;&lt;code&gt;文件&lt;/code&gt;是一组被命名的存储在某种介质（如硬盘、光盘、U</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Cpp内存管理</title>
