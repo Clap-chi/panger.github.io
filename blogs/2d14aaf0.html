@@ -1,13 +1,13 @@
-<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Linux常用函数 | zy</title><meta name="author" content="zy"><meta name="copyright" content="zy"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Linux常用函数close函数关闭一个文件描述符， 使它不在指向任何文件。在新的文件操作中该文件描述符可以被再次使用。 使用close函数时传入需要关闭文件的文件描述符（即调用open函数的返回值）即可。若关闭文件成功则返回0；若关闭文件失败则返回-1。 函数原型1int close(int fd);  函数参数fd：文件描述符 函数返回值若关闭文件成功则返回0；若关闭文件失败则返回-1。 op">
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Linux常用函数 | zy</title><meta name="author" content="zy"><meta name="copyright" content="zy"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Linux常用函数close函数关闭一个文件描述符， 使它不在指向任何文件。在新的文件操作中该文件描述符可以被再次使用。 使用close函数时传入需要关闭文件的文件描述符（即调用open函数的返回值）即可。若关闭文件成功则返回0；若关闭文件失败则返回-1。 函数原型1int close(int fd);  函数参数fd：需要关闭的文件或套接字的文件描述符。 函数返回值若关闭文件成功则返回0；若关闭">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux常用函数">
 <meta property="og:url" content="http://example.com/blogs/2d14aaf0.html">
 <meta property="og:site_name" content="zy">
-<meta property="og:description" content="Linux常用函数close函数关闭一个文件描述符， 使它不在指向任何文件。在新的文件操作中该文件描述符可以被再次使用。 使用close函数时传入需要关闭文件的文件描述符（即调用open函数的返回值）即可。若关闭文件成功则返回0；若关闭文件失败则返回-1。 函数原型1int close(int fd);  函数参数fd：文件描述符 函数返回值若关闭文件成功则返回0；若关闭文件失败则返回-1。 op">
+<meta property="og:description" content="Linux常用函数close函数关闭一个文件描述符， 使它不在指向任何文件。在新的文件操作中该文件描述符可以被再次使用。 使用close函数时传入需要关闭文件的文件描述符（即调用open函数的返回值）即可。若关闭文件成功则返回0；若关闭文件失败则返回-1。 函数原型1int close(int fd);  函数参数fd：需要关闭的文件或套接字的文件描述符。 函数返回值若关闭文件成功则返回0；若关闭">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
 <meta property="article:published_time" content="2023-11-30T05:58:58.000Z">
-<meta property="article:modified_time" content="2023-12-05T14:38:42.001Z">
+<meta property="article:modified_time" content="2023-12-08T07:35:13.151Z">
 <meta property="article:author" content="zy">
 <meta property="article:tag" content="Linux常用函数">
 <meta name="twitter:card" content="summary">
@@ -56,7 +56,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2023-12-05 22:38:42'
+  postUpdate: '2023-12-08 15:35:13'
 }</script><script>(win=>{
       win.saveToLocal = {
         set: (key, value, ttl) => {
@@ -154,21 +154,21 @@
       }
       detectApple()
     })(window)</script><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="zy" type="application/atom+xml">
-</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">9</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">9</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr class="custom-hr"/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="zy"><span class="site-name">zy</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Linux常用函数</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2023-11-30T05:58:58.000Z" title="Created 2023-11-30 13:58:58">2023-11-30</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2023-12-05T14:38:42.001Z" title="Updated 2023-12-05 22:38:42">2023-12-05</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Linux常用函数"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post Views:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="Linux常用函数"><a href="#Linux常用函数" class="headerlink" title="Linux常用函数"></a>Linux常用函数</h1><h2 id="close函数"><a href="#close函数" class="headerlink" title="close函数"></a>close函数</h2><p>关闭一个文件描述符， 使它不在指向任何文件。在新的文件操作中该文件描述符可以被再次使用。</p>
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">9</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">9</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr class="custom-hr"/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="zy"><span class="site-name">zy</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Linux常用函数</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2023-11-30T05:58:58.000Z" title="Created 2023-11-30 13:58:58">2023-11-30</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2023-12-08T07:35:13.151Z" title="Updated 2023-12-08 15:35:13">2023-12-08</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Linux常用函数"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post Views:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="Linux常用函数"><a href="#Linux常用函数" class="headerlink" title="Linux常用函数"></a>Linux常用函数</h1><h2 id="close函数"><a href="#close函数" class="headerlink" title="close函数"></a>close函数</h2><p>关闭一个文件描述符， 使它不在指向任何文件。在新的文件操作中该文件描述符可以被再次使用。</p>
 <p>使用close函数时传入需要关闭文件的<strong>文件描述符</strong>（即调用open函数的返回值）即可。若关闭文件成功则返回0；若关闭文件失败则返回-1。</p>
 <h3 id="函数原型"><a href="#函数原型" class="headerlink" title="函数原型"></a>函数原型</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="title function_">close</span><span class="params">(<span class="type">int</span> fd)</span>;</span><br></pre></td></tr></table></figure>
 
-<h3 id="函数参数"><a href="#函数参数" class="headerlink" title="函数参数"></a>函数参数</h3><p>fd：文件描述符</p>
+<h3 id="函数参数"><a href="#函数参数" class="headerlink" title="函数参数"></a>函数参数</h3><p><code>fd</code>：需要关闭的文件或套接字的文件描述符。</p>
 <h3 id="函数返回值"><a href="#函数返回值" class="headerlink" title="函数返回值"></a>函数返回值</h3><p>若关闭文件成功则返回0；若关闭文件失败则返回-1。</p>
 <h2 id="open函数"><a href="#open函数" class="headerlink" title="open函数"></a>open函数</h2><p>用来打开或者创建一个文件或者设备。</p>
 <h3 id="函数原型-1"><a href="#函数原型-1" class="headerlink" title="函数原型"></a>函数原型</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="title function_">open</span><span class="params">(<span class="type">const</span> <span class="type">char</span> *pathname, <span class="type">int</span> flags)</span>;</span><br><span class="line"><span class="type">int</span> <span class="title function_">open</span><span class="params">(<span class="type">const</span> <span class="type">char</span> *pathname, <span class="type">int</span> flags, <span class="type">mode_t</span> mode)</span> </span><br></pre></td></tr></table></figure>
 
-<h3 id="函数参数-1"><a href="#函数参数-1" class="headerlink" title="函数参数"></a>函数参数</h3><h4 id="第一个参数"><a href="#第一个参数" class="headerlink" title="第一个参数"></a>第一个参数</h4><p>pathname：指定需要打开的文件的路径。</p>
+<h3 id="函数参数-1"><a href="#函数参数-1" class="headerlink" title="函数参数"></a>函数参数</h3><h4 id="第一个参数"><a href="#第一个参数" class="headerlink" title="第一个参数"></a>第一个参数</h4><p><code>pathname</code>：指定需要打开的文件的路径。</p>
 <ul>
 <li>若pathname以<strong>路径</strong>的方式给出，则需要创建该文件时，在pathname路径下进行创建。</li>
 <li>若pathname以<strong>文件名</strong>的方式给出，则需要创建该文件时，默认在当前路径下进行创建。</li>
 </ul>
-<h4 id="第二个参数"><a href="#第二个参数" class="headerlink" title="第二个参数"></a>第二个参数</h4><p>flags：表示打开文件的方式。</p>
+<h4 id="第二个参数"><a href="#第二个参数" class="headerlink" title="第二个参数"></a>第二个参数</h4><p><code>flags</code>：表示打开文件的方式。</p>
 <p>flags是通过<code>O_RDONLY</code>, <code>O_WRONLY</code>或<code>O_RDWR</code>（指明文件是以只读 , 只写或读写方式打开的）与下面的零个或多个可选模式<strong>按位或</strong>操作符得到的:</p>
 <ul>
 <li><code>O_CREATE</code>：如果文件不存在就创建一个新文件。</li>
@@ -176,7 +176,7 @@
 <li><code>O_TRUNC</code>：如果文件已经存在，并且该文件是可写的，那么将会设置该文件的长度为0（清空文件的内容）。</li>
 <li><code>O_APPEND</code>：文件以追加模式打开，在写之前，文件读写指针被置末尾。</li>
 </ul>
-<h4 id="第三个参数"><a href="#第三个参数" class="headerlink" title="第三个参数"></a>第三个参数</h4><p>mode：指明文件使用的权限。</p>
+<h4 id="第三个参数"><a href="#第三个参数" class="headerlink" title="第三个参数"></a>第三个参数</h4><p><code>mode</code>：指明文件使用的权限。</p>
 <p>传入0666参数进行文件创建，按理应得到-rw-rw-rw-权限的文件，但却得到了下面权限的文件：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-rw-rw-r--</span><br></pre></td></tr></table></figure>
 
@@ -196,7 +196,7 @@
 <p>运行结果为：</p>
 <p><img src="https://picyuan-1321960394.cos.ap-beijing.myqcloud.com/image-20231130142432496.png" alt="image-20231130142432496"></p>
 <p><img src="https://picyuan-1321960394.cos.ap-beijing.myqcloud.com/image-20231130142340377.png" alt="image-20231130142340377"></p>
-<p>这里我们也可以看出文件描述符的取值最小从3开始，0，1，2都已经被使用。</p>
+<p>这里我们也可以看出文件描述符的取值最小从3开始，因为0，1，2是分配给标准I&#x2F;O的描述符。</p>
 <h4 id="实例2"><a href="#实例2" class="headerlink" title="实例2"></a>实例2</h4><p>创建文件名test2.c：</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;sys/types.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;sys/stat.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;fcntl.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;unistd.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    close(<span class="number">1</span>);</span><br><span class="line">    <span class="built_in">printf</span> (<span class="string">&quot;Hello&quot;</span>);</span><br><span class="line">    <span class="type">int</span> fd = open(<span class="string">&quot;./log&quot;</span>,O_CREAT | O_RDWR);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, fd);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -215,18 +215,18 @@
 <h3 id="函数原型-2"><a href="#函数原型-2" class="headerlink" title="函数原型"></a>函数原型</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">ssize_t</span> <span class="title function_">write</span><span class="params">(<span class="type">int</span> fd, <span class="type">const</span> <span class="type">void</span> *buf, <span class="type">size_t</span> count)</span>;</span><br></pre></td></tr></table></figure>
 
 <h3 id="函数参数-2"><a href="#函数参数-2" class="headerlink" title="函数参数"></a>函数参数</h3><ol>
-<li>fd：文件描述符</li>
-<li>buf：缓冲区</li>
-<li>count：字节数</li>
+<li><code>fd</code>：显示数据传输对象的文件描述符。</li>
+<li><code>buf</code>：保存要传输数据的缓冲地址值。</li>
+<li><code>count</code>：要传输数据的字节数。</li>
 </ol>
 <h3 id="函数返回值-2"><a href="#函数返回值-2" class="headerlink" title="函数返回值"></a>函数返回值</h3><p>成功时返回所写入的字节数（若为零则表示没有写入数据）。失败时返回-1，并置errno为相应值。若count为零，对于普通文件无任何影响，但对特殊文件将产生不可预料的后果。返回0表示没有数据写入。</p>
 <h2 id="read函数"><a href="#read函数" class="headerlink" title="read函数"></a>read函数</h2><p>read()从文件描述符fd中读取count字节的数据并放入从buf开始的缓冲区中。如果count为零，read()返回0，不执行其他任何操作。如果 count大于SSIZE_MAX，那么结果将不可预料。</p>
 <h3 id="函数原型-3"><a href="#函数原型-3" class="headerlink" title="函数原型"></a>函数原型</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">ssize_t</span> <span class="title function_">read</span><span class="params">(<span class="type">int</span> fd, <span class="type">void</span> *buf, <span class="type">size_t</span> count)</span>;</span><br></pre></td></tr></table></figure>
 
 <h3 id="函数参数-3"><a href="#函数参数-3" class="headerlink" title="函数参数"></a>函数参数</h3><ol>
-<li>fd：文件描述符</li>
-<li>buf：缓冲区</li>
-<li>count：字节数</li>
+<li><code>fd</code>：显示数据接收对象的文件描述符。</li>
+<li><code>buf</code>：要保存接收数据的缓冲地址值。</li>
+<li><code>count</code>：要接收数据的最大字节数。</li>
 </ol>
 <h3 id="函数返回值-3"><a href="#函数返回值-3" class="headerlink" title="函数返回值"></a>函数返回值</h3><p>成功时返回读取的字计数；失败时返回-1，并设置errno的值；读到文件末尾的话就返回0。</p>
 <h3 id="使用实例-1"><a href="#使用实例-1" class="headerlink" title="使用实例"></a>使用实例</h3><p>模拟cat命令实现代码：</p>
