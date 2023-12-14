@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-12-08T07:35:13.151Z</updated>
+  <updated>2023-12-14T17:26:47.718Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>操作系统高级教程思考题</title>
+    <link href="http://example.com/blogs/6fbd99c.html"/>
+    <id>http://example.com/blogs/6fbd99c.html</id>
+    <published>2023-12-14T14:46:27.000Z</published>
+    <updated>2023-12-14T17:26:47.718Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="第一部分"><a href="#第一部分" class="headerlink" title="第一部分"></a>第一部分</h1><h2 id="1-为什么开始启动计算机的时候，执行的是BIOS代码而不是操作系统自身的代码？"><a href="#1-为什么开始启动计算机的时候，执行的是BIOS代码而不是操作系统自身的代码？" class="headerlink" title="1.为什么开始启动计算机的时候，执行的是BIOS代码而不是操作系统自身的代码？"></a>1.为什么开始启动计算机的时候，执行的是BIOS代码而不是操作系统自身的代码？</h2><p>最开始启动计算机的时候，计算机内存未初始化，没有任何程序。而因为<code>CPU</code>只能读取内存中的程序，所以必须将操作系统先加载进内存当中。需要使用<code>BIOS</code>。在加电后，<code>BIOS</code>需要完成一些硬件检测工作，同时设置实模式下的中断向量表和中断服务程序，并将操作系统的引导扇区加载至<code>0x07C00</code>处，然后跳转至<code>0x07C00</code>运行操作系统自身的代码。这些就是由<code>BIOS</code>代码来实现的。所以计算机启动最开始执行的是<code>BIOS</code>代码。</p><h2 id="2-为什么BIOS只加载了一个扇区，后续扇区却是由bootsect代码加载？为什么BIOS没有直接把所有需要加载的扇区都加载？"><a href="#2-为什么BIOS只加载了一个扇区，后续扇区却是由bootsect代码加载？为什么BIOS没有直接把所有需要加载的扇区都加载？" class="headerlink" title="2.为什么BIOS只加载了一个扇区，后续扇区却是由bootsect代码加载？为什么BIOS没有直接把所有需要加载的扇区都加载？"></a>2.为什么BIOS只加载了一个扇区，后续扇区却是由bootsect代码加载？为什么BIOS没有直接把所有需要加载的扇区都加载？</h2><p>操作系统和<code>BIOS</code>通常是由不同的专业团队设计和开发的，为了能协同工作，必须建立操作系统和<code>BIOS</code>之间的协调机制。而现行的方法是“两头约定”和“定位识别”。对<code>BIOS</code>而言， “约定”接到启动操作系统的命令， “定位识别”只从启动扇区把代码加载到 <code>0x07C00(BOOTSEG)</code>这个位置。后续扇区则由<code>bootsect</code>代码加载，这些代码由编写系统的用户负责，与<code>BIOS</code>无关。这样构建协调机制的好处是站在整个体系的高度，统一设计和统一安排，简单而有效。<code>BIOS</code>和操作系统的开发都可以遵循这⼀约定，灵活地进行各自的设计。</p><h2 id="3-为什么BIOS把bootsect加载到0x07c00，而不是0x00000？加载后又马上挪到0x90000处，是何道理？为什么不一次加载到位？"><a href="#3-为什么BIOS把bootsect加载到0x07c00，而不是0x00000？加载后又马上挪到0x90000处，是何道理？为什么不一次加载到位？" class="headerlink" title="3.为什么BIOS把bootsect加载到0x07c00，而不是0x00000？加载后又马上挪到0x90000处，是何道理？为什么不一次加载到位？"></a>3.为什么BIOS把bootsect加载到0x07c00，而不是0x00000？加载后又马上挪到0x90000处，是何道理？为什么不一次加载到位？</h2><p>加载到<code>0x07c00</code>是<code>BIOS</code>提前约定设置的，不能加载到<code>0x00000</code>是因为<code>BIOS</code>程序在内存最开始的位置 <code>(0x00000)</code>用<code>1KB</code>的内存空间构建中断向量表，在紧挨着它的位置用<code>256</code>字节的内存空间构建<code>BIOS</code>数据区，并在大约<code>57KB</code>以后的位置加载了<code>8KB</code>左右的与中断向量表相应的若干中断服务程序。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;第一部分&quot;&gt;&lt;a href=&quot;#第一部分&quot; class=&quot;headerlink&quot; title=&quot;第一部分&quot;&gt;&lt;/a&gt;第一部分&lt;/h1&gt;&lt;h2 id=&quot;1-为什么开始启动计算机的时候，执行的是BIOS代码而不是操作系统自身的代码？&quot;&gt;&lt;a href=&quot;#1-为什么开</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Linux常用函数</title>
