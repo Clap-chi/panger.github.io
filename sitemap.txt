@@ -1,3 +1,4 @@
+http://example.com/categories/index.html
 http://example.com/tags/index.html
 http://example.com/blogs/6fbd99c.html
 http://example.com/blogs/2d14aaf0.html
