@@ -10,12 +10,12 @@ http://example.com/blogs/713c1ac0.html
 http://example.com/blogs/22e916fa.html
 http://example.com/
 http://example.com/tags/C-2-0/
-http://example.com/tags/C-%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/
 http://example.com/tags/C-%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/
+http://example.com/tags/C-%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/
 http://example.com/tags/C-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B/
-http://example.com/tags/Effective-C/
-http://example.com/tags/%E7%A7%BB%E5%8A%A8%E4%BA%92%E8%BF%9E%E7%BD%91%E6%8A%80%E6%9C%AF/
-http://example.com/tags/C-STL/
 http://example.com/tags/Linux%E7%B3%BB%E7%BB%9F%E5%91%BD%E4%BB%A4/
+http://example.com/tags/C-STL/
 http://example.com/tags/Linux%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0/
+http://example.com/tags/Effective-C/
 http://example.com/tags/UCAS%E8%AF%BE%E7%A8%8B/
+http://example.com/tags/%E7%A7%BB%E5%8A%A8%E4%BA%92%E8%BF%9E%E7%BD%91%E6%8A%80%E6%9C%AF/
